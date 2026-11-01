@@ -13,6 +13,10 @@ body {
     max-width: 1050px;
 }
 
+header {
+    background-color: navy;
+}
+
 main {
     max-width: 1050px;
     text-align: center;
@@ -132,6 +136,7 @@ aside a:hover{
     text-decoration: underline;
     text-decoration-color: goldenrod;
     color: black;
+    font-weight: bold;
 }
 aside a {
     text-decoration: none;
