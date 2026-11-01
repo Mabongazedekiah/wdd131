@@ -13,6 +13,11 @@ body {
     max-width: 1050px;
 }
 
+main {
+    max-width: 1050px;
+    text-align: center;
+}
+
 #course-title {
     font-size: 30px;
     display: block;
@@ -91,6 +96,10 @@ img {
     border-radius: 20px;
 }
 
+card {
+    background-color: white;
+}
+
 aside {
     display: grid;
     grid-column: 2 / 3;
@@ -126,4 +135,9 @@ aside a:hover{
 }
 aside a {
     text-decoration: none;
+}
+
+#lastModified {
+    font-size: 16px;
+    color: goldenrod;
 }
