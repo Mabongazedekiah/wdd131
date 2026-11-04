@@ -16,3 +16,6 @@ deleteButton.addEventListener("click", function() {
     input.focus();
     input.value = "";
 })
+
+document.title = "My Favorite Chapters";
+document.getElementById("year").textContent = new Date().getFullYear();
