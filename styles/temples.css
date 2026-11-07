@@ -28,8 +28,11 @@ h1 {
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
     max-width: 600px;
     margin: 1rem auto;
+    align-items: center;
 }
 
 #menu::before {
@@ -62,6 +65,8 @@ nav {
 
 .navigation a {
     display: none;
+    margin: 0  2rem;
+
 
 }
 
