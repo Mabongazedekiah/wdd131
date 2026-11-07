@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+header {
+    background-color: #551a8b;
+}
+
+#heading {
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+}
+
+h1 {
+    text-align: left;
+    color: navy;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+nav {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.opened::before {
+    content: "❌";
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #000;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation a {
+    display: none;
+
+}
+
+.navigation a:hover, .navigation a:focus {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.opened a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.active::before {
+    content: "✅"
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+main {
+     max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: #551a8b;
+    color: white;
+    padding: 1rem;
+}
+
+p {
+    margin: .5rem;
+    font-size: 1.2rem;
+}
