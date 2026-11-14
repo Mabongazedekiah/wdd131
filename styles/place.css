@@ -80,3 +80,7 @@ main {
 ul li {
     list-style: none;
 }
+
+#current-year::after{
+    content: " 🌸";
+}
