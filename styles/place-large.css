@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 1200px;
+        margin: 1rem auto;
+        position: relative;
+        background-color: #780000;
+    }
+
+    body {
+        background-color: #005700;;
+    }
+    .section {
+        width: 30%;
+        position: absolute;
+    }
+
+    #data {
+        top: 50px;
+        left: 30px;
+    }
+
+    #weather {
+        right: 30px;
+        bottom: 50px;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #weather img {
+        display: none;
+    }
+
+    #pseudo::before {
+        content: "⛅";
+    }
+}

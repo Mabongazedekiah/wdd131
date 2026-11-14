@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mabonga Ngala Zedekiah">
+    <meta name="description" content="A page about Kenya, showing an image of Kenya , some data about it, and weather data.">
+    <title>WDD 131 | Kenya</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discover Kenya</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/kenya-landscape-large.webp" media="(min-width:600px)">
+                <img src="images/nairobi-small.webp" alt="A picture of Nairobi City" width="500" height="333">
+            </picture>
+        </section>
+        <div class="container">
+        <section id="data" class="section">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 582,645 sq km</li>
+                <li>Population: 53,300,000 </li>
+                <li>Capital: Nairobi</li>
+                <li>Languages: Swahili, English</li>
+                <li>Currency: Kenyan Shilling</li>
+                <li>Time Zone: UTC +3 </li>
+                <li>Country Code: +254</li>
+                <li>Internet TLD: .ke </li>
+            </ul>
+        </section>
+        <section class="section" id="weather">
+            <h2>Weather<span id="pseudo"></span></h2>
+            <img src="images/cloud-sun.svg" alt="A weather icon image.">
+            <ul>
+                <li>Temperature: 10</li>
+                <li>Conditions: Partly Cloudy</li>
+                <li>Wind: 5 km/h</li>
+                <li>Windchill: <span class="wind"></span></li>
+            </ul>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="current-year"></span> 🌸 Zedekiah Mabonga Ngala 🌸 Kenya</p><br>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
