@@ -46,10 +46,10 @@ tr:nth-last-child(1) {
     background-color: #333;
     }
 
-    #blank {
+#blank {
         background-color: #000;
     }
 
-    tbody tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
         background-color: #fff;
     }
