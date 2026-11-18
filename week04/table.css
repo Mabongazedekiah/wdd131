@@ -8,6 +8,8 @@ body {
 table {
     border: 2px solid rgb(0 0 0 / 0.2);
     border-collapse: collapse;
+    width: 400px;
+    height: 250px;
 }
 
 th, td {
@@ -22,6 +24,10 @@ thead {
     font-size: larger;
 }
 
+thead th {
+    padding: 1rem;
+}
+
 tbody th {
     font-weight: bolder;
     font-size: larger;
@@ -33,5 +39,17 @@ tr:nth-child(even) {
 
 caption {
     margin:  .5rem;
+    caption-side: bottom;
 }
 
+tr:nth-last-child(1) {
+    background-color: #333;
+    }
+
+    #blank {
+        background-color: #000;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
