@@ -70,7 +70,7 @@ const temples = [
     templeName: "Calgary Alberta",
     location: "Calgary Alberta, Canada",
     dedicated: "2012, October, 29",
-    area: "33000",
+    area: 33000,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/calgary-alberta-temple/calgary-alberta-temple-13199-main.jpg"
   },
   {
@@ -108,9 +108,26 @@ function displayTemples(temples){
     container.innerHTML = figure;
 }
 
-const largeTemples = temples.filter(temple => `${temples.area}` > 90000);
-document.getElementById("large").addEventListener("click", displayTemples(largeTemples));
+document.getElementById("old").addEventListener("click", ()=> {
+    const oldTemples = temples.filter(temple => parseInt(temple.dedicated) < 1900);
+    displayTemples(oldTemples);
+})
 
+document.getElementById("new").addEventListener("click", ()=>{
+    const newTemples = temples.filter(temple => parseInt(temple.dedicated) > 2000);
+    displayTemples(newTemples);
+})
 
+document.getElementById("large").addEventListener("click", ()=>{
+    const largeTemples = temples.filter(temple => temple.area > 90000);
+    displayTemples(largeTemples);
+})
 
-displayTemples(temples)
+document.getElementById("small").addEventListener("click", ()=>{
+    const smallTemples = temples.filter(temple => temple.area < 10000);
+    displayTemples(smallTemples);
+})
+
+document.getElementById("home").addEventListener("click",()=>{displayTemples(temples)});
+
+displayTemples(temples);
